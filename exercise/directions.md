@@ -9,7 +9,9 @@ Paste your answers into this file.
 ## Print every number from 0 to 10
 
 ```
-ANSWER HERE
+for (let i = 0; i < 11; i++) {
+    console.log(`The number is ${i}`) 
+}
 ```
 
 <br>
@@ -17,7 +19,9 @@ ANSWER HERE
 ## Print every number from 10 to 0
 
 ```
-ANSWER HERE
+for (let i = 10; i >= 0; i--) {
+    console.log(`The number is ${i}`) 
+}
 ```
 
 <br>
@@ -25,7 +29,9 @@ ANSWER HERE
 ## Print every number from 4 to -16
 
 ```
-ANSWER HERE
+for (let i = 4; i >= -16; i--) {
+    console.log(`The number is ${i}`) 
+}
 ```
 
 <br>
@@ -33,7 +39,12 @@ ANSWER HERE
 ## Print every fifth number from 8 to 41
 
 ```
-ANSWER HERE
+let num = 8;
+while (num < 42) 
+{
+    console.log(num)
+ num +=5   
+}
 ```
 
 <br>
@@ -50,7 +61,17 @@ If the `number` is evenly divisible by 3 AND evenly divisible by 5, print "Fizzb
 
 
 ```
-ANSWER HERE
+for (let i = 1; i < 101; i++) {
+if (i % 3 ===0 && i % 5 ===0) {
+   console.log(i +' FizzBuzz') 
+} else if (i % 5 ===0) {
+    console.log(i + ' Buzz') 
+} else if (i % 3 ===0) {
+    console.log(i + ' Fizz') 
+} else {
+    console.log(i) 
+}     
+}
 ```
 
 <br>
@@ -61,7 +82,15 @@ ANSWER HERE
 Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
 
 ```
-ANSWER HERE
+for (let i = 0; i < 21; i++) {
+        if (i % 2 ==0) {
+            console.log(`${i}is even`)
+            
+        } else {
+            console.log(`${i}is odd`)
+        }
+}
+
 ```
 
 <br>
@@ -74,7 +103,11 @@ Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 1
 
 
 ```
-ANSWER HERE
+sum = '';
+for (let i = 0; i < 11; i++) {
+    sum = i *9
+    console.log(sum);   
+}
 ```
 
 <br>
@@ -84,5 +117,15 @@ ANSWER HERE
 Check the results for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
 ```
-ANSWER HERE
+for (let i = 60; i < 101; i++) {
+    if (i <70) {
+        console.log(`For ${i}, you got a D.`)
+    } else if ( i <80) {
+        console.log(`For ${i}, you got a C.`)
+    } else if ( i <90) {
+        console.log(`For ${i}, you got a B.`)
+    } else {
+        console.log(`For ${i}, you got a A.`)
+    }  
+    }
 ```
